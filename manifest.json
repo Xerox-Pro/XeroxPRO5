@@ -1,0 +1,21 @@
+{
+  "name": "Xerox Pro Browser",
+  "short_name": "Xerox Pro",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "description": "A secure, private web browser that proxies content.",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iODAiLz48cGF0aCBkPSJNNjQgMTI4IEw5NiA2NCBMMTgwIDEyOCIvPjwvc3ZnPg==",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIyMjQiLz48cGF0aCBkPSJNMTYwIDMzNiBMMjU2IDE3NiBMMzc2IDMzNiIvPjwvc3ZnPg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
