@@ -1,4 +1,5 @@
 import { Eye } from "lucide-react";
+import React from "react";
 
 export interface SearchResult {
   title: string;
@@ -10,7 +11,8 @@ interface SearchResultItemProps {
   result: SearchResult;
 }
 
-export function SearchResultItem({ result }: SearchResultItemProps) {
+// Fix: Changed component to be a React.FC to correctly handle the special `key` prop and resolve the TypeScript error.
+export const SearchResultItem: React.FC<SearchResultItemProps> = ({ result }) => {
   const proxyUrl = `/api/proxy?url=${encodeURIComponent(result.url)}`;
 
   return (
@@ -35,4 +37,4 @@ export function SearchResultItem({ result }: SearchResultItemProps) {
       </div>
     </div>
   );
-}
+};

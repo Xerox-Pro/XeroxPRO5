@@ -2,7 +2,6 @@ import { SearchForm } from "@/components/SearchForm";
 import { SearchResultItem, SearchResult } from "@/components/SearchResultItem";
 import { ShieldCheck } from "lucide-react";
 import Link from "next/link";
-// Fix: Import React to make JSX typings for special props like 'key' available.
 import React, { Suspense } from "react";
 
 const DUMMY_RESULTS: SearchResult[] = [

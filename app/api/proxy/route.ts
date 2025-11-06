@@ -1,6 +1,8 @@
 import { NextRequest } from 'next/server';
 import { JSDOM } from 'jsdom';
 
+export const dynamic = 'force-dynamic'; // Vercelのキャッシュを無効化
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const targetUrl = searchParams.get('url');
@@ -94,12 +96,10 @@ export async function GET(request: NextRequest) {
       if (!response.body) {
         return new Response(null, { status: response.status, statusText: response.statusText, headers: response.headers });
       }
-      const { readable, writable } = new TransformStream();
-      response.body.pipeTo(writable);
-
+      
       const headers = new Headers(response.headers);
       
-      return new Response(readable, {
+      return new Response(response.body, {
         status: response.status,
         statusText: response.statusText,
         headers: headers,
